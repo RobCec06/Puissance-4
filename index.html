@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Puissance 4</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Puissance 4</h1>
+    <div id="board"></div>
+    <div class="status">
+      <span class="player-indicator" id="player-indicator"></span>
+      <span id="status-text">C'est au tour de <span id="current-player">rouge</span></span>
+    </div>
+    <div class="buttons">
+      <button id="replay">Rejouer</button>
+      <button id="undo">Annuler</button>
+    </div>
+  </div>
+  <!-- Ajoutez ceci à la fin de la div .container, avant la balise script -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+      <h2 id="winner-message"></h2>
+      <img id="winner-image" src="19j64q.jpg" alt="Image du gagnant" />
+      <button id="close-modal">Fermer</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
